@@ -1,6 +1,8 @@
 package com.example.project;
 
-public class TipCalculator {
+import java.util.Scanner;
+
+public class extraCredit {
     //WRITE YOUR PROGRAM IN calculateTip
     public static String calculateTip(int people, int percent, double cost) { //You must use these  variable in your calculations
         //DO NOT DELETE ANY OF THE CODE BELOW      
@@ -26,7 +28,18 @@ public class TipCalculator {
     }
      //TEST YOUR PROGRAM IN main
      public static void main(String[] args) {
-        //try different values for people, percent, and cost to test your program before running test cases
+    String item = "";
+    String items = "";
+    while (item != "-1") {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter an item name or type -1 to finish: ");
+        item = scanner.nextLine();
+        items += item;
+    }
+
+    // code below the while loop runs after the loop ends
+    System.out.print("You entered 'x' :( ");
+
         int people = 6; 
         int percent = 25;
         double cost = 52.27;              
